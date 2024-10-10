@@ -494,7 +494,59 @@
 	border-radius: 50%;
   }
   
-  #cboxCurrent {
+
+/*Project styling  starts*/
+
+.project-item {
+    background-color: #044e54; /* Matching background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    height: 350px; /* Fixed height for all items */
+    width: 100%;   /* Full width of the container */
+    overflow-y: auto;  /* Scroll vertically if content exceeds height */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+}
+
+.project-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #e6f1f5; /* Light color for h2 (clickable) */
+    text-transform: uppercase;
+}
+
+.project-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #84d2f6; /* Softer shade for h3 */
+}
+
+.project-item p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #b4e1fa; /* Light blue for paragraph text */
+}
+
+/* Link styling for h2 */
+.project-item h2 a {
+    color: #e6f1f5; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.project-item h2 a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+
+Project styling Ends/*  */
+
+#cboxCurrent {
 	display: none !important
   }
   
