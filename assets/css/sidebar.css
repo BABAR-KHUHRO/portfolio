@@ -90,3 +90,36 @@
 
   /* .sidebar .social .nav-item { margin:0 auto; } */
   
+  /* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    height: auto;               /* Prevent stretching to 100vh on mobile */
+    min-height: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;/* Align items from top to bottom */
+    align-items: center;
+    gap: 15px;                  /* Set a consistent, small gap between sections */
+    padding: 20px 10px;
+  }
+
+  /* Target the profile image container inside the sidebar */
+  .sidebar .profile-img, 
+  .sidebar img {
+    margin-bottom: 10px;        /* Reduce gap below the profile image */
+  }
+
+  /* Target navigation links list */
+  .sidebar nav, 
+  .sidebar .nav-links, 
+  .sidebar ul {
+    margin: 10px 0;             /* Remove vertical stretch margins */
+    padding: 0;
+  }
+
+  /* Target bottom social/contact links */
+  .sidebar .social-links, 
+  .sidebar .footer-links {
+    margin-top: 15px;           /* Keep social links right below nav links */
+  }
+}
