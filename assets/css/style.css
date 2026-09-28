@@ -1,0 +1,97 @@
+/* assets/css/style.css
+   Global site styles (base, layout + shared content layout)
+*/
+
+/* Reset & Base */
+* { margin:0; padding:0; box-sizing:border-box; font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+html,body { height:100%; }
+body {
+  background: #022c43;
+  color: #fff;
+  min-height:100vh;
+  overflow-x: hidden;
+}
+
+/* Sidebar width (used to offset content) */
+:root {
+  --sidebar-width: 70px;
+  --content-gap: 20px; /* smaller gap between content columns */
+}
+
+
+.page-content .content {
+  margin-left: var(--sidebar-width);
+  padding: var(--content-gap);
+  display: flex;
+  gap: var(--content-gap);
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+
+
+
+/* Default .content helpers used by index/about pages
+   Text column grows, right column is fixed (profile image / spinner).
+*/
+.content {
+  display: flex;
+  gap: 28px;
+  align-items: center;        /* vertical center by default */
+  justify-content: space-between;
+}
+
+/* Text column used on index / about */
+.content .text,
+.content .text-zone,
+.content .skills-text,
+.content .skills-page .skills-text {
+  flex: 1 1 auto;
+  max-width: 720px;
+  box-sizing: border-box;
+}
+
+/* Right-side column (profile pic / spinner area)
+   Default fixed size to keep layout consistent. Pages can override.
+*/
+.content aside,
+.content .profile-pic,
+.content .stage,
+.content .skills-galaxy {
+  flex: 0 0 auto;
+  margin-left: 16px;
+}
+
+/* Profile picture box */
+.profile-pic {
+  width: 260px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-pic img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.35);
+}
+
+/* Generic text styles */
+h1 { font-size: 2.6rem; line-height: 1.15; margin-bottom: 12px; }
+h1 span { color: #f0db4f; }
+
+/* Small helpers */
+.tags { font-family: monospace; color:#777; font-size:0.9rem; }
+
+/* Make content stack nicely on small screens */
+@media (max-width: 900px) {
+  .content { flex-direction: column; align-items: center; padding: 22px; margin-left: var(--sidebar-width); }
+  .profile-pic { width: 200px; height: 200px; }
+  .profile-pic img { width:200px; height:200px; }
+}
+
+/* keep portfolio layout untouched — portfolio.css will override as needed */
+

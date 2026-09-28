@@ -1,0 +1,27 @@
+/* assets/css/skills.css - skills page */
+.content .skills-page { width:100%; box-sizing:border-box; }
+.content .skills-page .skills-wrap { display:flex; gap:24px; align-items:flex-start; justify-content:space-between; flex-wrap:nowrap; }
+
+/* left column */
+.content .skills-page .skills-text { flex:1 1 auto; min-width:260px; max-width: calc(100% - 540px); color:#fff; }
+.content .skills-page .skills-text h1 { font-size:2.2rem; margin-bottom:12px; }
+.content .skills-page .tech-badges { margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; }
+.content .skills-page .tech-tag { display:inline-block; padding:6px 10px; border-radius:999px; background:rgba(255,255,255,0.04); color:#fff; border:1px solid rgba(240,219,79,0.08); font-weight:600; font-size:0.95rem; }
+
+/* right column fixed width */
+.content .skills-page .skills-galaxy { flex:0 0 520px; max-width:520px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; box-sizing:border-box; }
+.content .skills-page .galaxy-stage { position:relative; width:500px; height:500px; margin:0 auto; }
+.content .skills-page #skillsCanvas { width:500px !important; height:500px !important; display:block; margin:0 auto; background:transparent; cursor:grab; -webkit-user-select:none; user-select:none; }
+
+.content .skills-page .hidden-tags { display:none; }
+.content .skills-page .skills-note { color: rgba(255,255,255,0.9); margin-top:10px; }
+
+/* responsive */
+@media (max-width:1024px) {
+  .content .skills-page .skills-wrap { flex-direction: column; gap:20px; }
+  .content .skills-page .skills-galaxy, .content .skills-page .galaxy-stage, .content .skills-page #skillsCanvas { width:420px !important; height:420px !important; max-width:100%; }
+  .content .skills-page .skills-text { max-width:100%; }
+}
+@media (max-width:640px) {
+  .content .skills-page .skills-galaxy, .content .skills-page .galaxy-stage, .content .skills-page #skillsCanvas { width:320px !important; height:320px !important; }
+}

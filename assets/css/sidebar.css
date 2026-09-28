@@ -1,0 +1,92 @@
+/* assets/css/sidebar.css
+   Sidebar styles and active-item behavior
+*/
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 70px;
+    background: #181818;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 6px;
+    gap: 0px;
+    z-index: 50;
+  }
+  .sidebar .logo { width:56px; height:56px; border-radius:50%; object-fit:cover; }
+  
+  /* nav container */
+  /* .sidebar .nav { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; width:100%; } */
+  
+  .sidebar .nav {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px; /* was 10px */
+    width: 100%;
+  }
+  
+
+  /* nav item layout */
+  .nav-item {
+    width:70px;
+    height:56px;
+    border-radius:8px;
+    position:relative;
+    display:block;
+    overflow:hidden;
+    text-decoration:none;
+    color:#fff;
+    -webkit-tap-highlight-color:transparent;
+  }
+  
+  /* Icon + label positioned on top of each other */
+  .nav-item .ico,
+  .nav-item .label {
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    pointer-events:none; /* allow anchor click */
+  }
+  
+  /* icon visible by default */
+  .nav-item .ico { font-size:22px; transition: transform .22s ease, opacity .22s ease; opacity:1; }
+  .nav-item .label { font-size:13px; color:#f0db4f; font-weight:600; opacity:0; transform: translateY(6px); transition: transform .22s ease, opacity .22s ease; }
+  
+  /* hover swap */
+  .nav-item:hover .ico { opacity:0; transform: translateY(-6px); }
+  .nav-item:hover .label { opacity:1; transform: translateY(0); }
+  
+  /* active state: hide icon, show label (so there's never icon+label at same time) */
+  .nav-item.active .ico { opacity:0 !important; transform: translateY(-6px); }
+  .nav-item.active .label { opacity:1 !important; transform: translateY(0); }
+  
+  /* subtle hover background */
+  .nav-item:hover,
+  .nav-item.active {
+    background: rgba(255,255,255,0.02);
+  }
+  
+  /* social links */
+  /* .sidebar .social { display:flex; flex-direction:column; gap:10px; margin-bottom:6px; width:100%; align-items:center; } */
+
+  .sidebar .social {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin-top: 2px;   /* NEW: adds separation from nav */
+    margin-bottom: 2px;
+    width: 100%;
+    align-items: center;
+  }
+  
+
+  /* .sidebar .social .nav-item { margin:0 auto; } */
+  
