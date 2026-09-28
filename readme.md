@@ -140,6 +140,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## ✉️ Contact
 
 **Your Name**  
-- **Portfolio:** [Your Live Site Link](https://babar-khuhro.github.io/portfolio/)
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/babar-khan-853191163/)
+- **Portfolio:** [BABAR](https://babar-khuhro.github.io/portfolio/)
+- **LinkedIn:** [BABAR](https://www.linkedin.com/in/babar-khan-853191163/)
 - **Email:** bk8483300@gmail.com
