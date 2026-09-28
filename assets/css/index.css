@@ -3,34 +3,31 @@
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2.5rem;
 }
 
 /* Hero Section */
 .hero {
   display: flex;
   flex-direction: column;
-  align-items: center;   /* centers horizontally */
-  justify-content: center; /* centers vertically inside hero */
+  align-items: center;
+  justify-content: center;
   text-align: center;
   gap: 1.2rem;
-  width: 100%;           /* take full space after sidebar */
-  margin: 0 auto;        /* center block */
+  width: 100%;
+  margin: 0 auto;
 }
-
 
 .profile-pic {
   width: 180px;
   height: 180px;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
-
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.35);
   display: flex;
   align-items: center;
   justify-content: center;
-
-  margin: 0 auto;   /* Center horizontally */
+  margin: 0 auto;
 }
 
 .profile-pic img {
@@ -40,54 +37,46 @@
   border-radius: 50%;
 }
 
-
-
-
 .hero-name {
   text-align: center;
 }
 
 .hero-name h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin: 0;
+  color: #fff;
 }
 
 .hero-name h2 {
   font-size: 1.2rem;
-  font-weight: 400;
-  color: #666;
-  margin: 0;
-}
-
-
-/* About Section */
-
-.about-section p {
-  margin-bottom: 1rem;
-  line-height: 1.7;
+  font-weight: 500;
+  color: #f0db4f;
+  margin-top: 4px;
 }
 
 /* About Section */
 .about-section {
-  width: 100%;         /* take all available space */
-  margin-left: 0;      /* respect sidebar gap */
-  margin-right: 0;     /* also flush right side */
-  max-width: none;     /* remove the 900px cap */
-}
-
-
-/* Ensure hero takes full row below sidebar */
-.home-page .hero {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;   /* center horizontally */
-  justify-content: center;
-  text-align: center;
+  max-width: 900px;
   margin: 0 auto;
 }
 
-/* Make sure profile picture is centered */
-.home-page .hero .profile-pic {
-  margin: 0 auto 1rem auto;
+.about-section p {
+  margin-bottom: 1.2rem;
+  line-height: 1.75;
+  font-size: 1.05rem;
+  color: rgba(235, 245, 255, 0.95);
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 1.5rem 1rem;
+  }
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+  }
+  .hero-name h1 {
+    font-size: 1.8rem;
+  }
 }
