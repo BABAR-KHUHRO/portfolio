@@ -2,23 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Certificates | Babar Khan</title>
 
   <!-- Global styles -->
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- Component styles (kept separate for clarity) -->
+  <!-- Component styles -->
   <link rel="stylesheet" href="assets/css/preloader.css">
   <link rel="stylesheet" href="assets/css/sidebar.css">
 
-  <!-- Page-specific extra head (e.g. external libs) -->
-  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <!-- Page-specific styles -->
-      <link rel="stylesheet" href="assets/css/certificates.css">
-  </head>
+  <link rel="stylesheet" href="assets/css/certificates.css">
+</head>
 <body>
 
-  <!-- Preloader (inline) -->
+  <!-- Preloader -->
   <div class="preloader" aria-hidden="false">
     <div class="inner">
       <img src="assets/images/Babarkhan.jpg" alt="Logo" class="logo" />
@@ -27,50 +29,44 @@
     </div>
   </div>
 
-  <!-- Sidebar (inline) -->
+  <!-- Sidebar -->
   <aside class="sidebar" aria-label="Sidebar">
     <img src="assets/images/Babarkhan.jpg" alt="Logo" class="logo" />
 
     <nav class="nav" aria-label="Main navigation">
-  <a class="nav-item" href="index.html" title="About">
-  <span class="ico">👤</span>
-    <span class="label">About</span>
-    </a>
-
-  
-  <a class="nav-item" href="skills.html" title="Skills">
-    <span class="ico">⚙️</span>
-    <span class="label">Skills</span>
-  </a>
-
-  <a class="nav-item" href="portfolio.html" title="Portfolio">
-    <span class="ico">📂</span>
-    <span class="label">Portfolio</span>
-  </a>
-
-  <!-- New Certificates link -->
-  <a class="nav-item" href="certificates.html" title="Certificates">
-    <span class="ico">🎓</span>
-    <span class="label">Certificates</span>
-  </a>
-
-  <a class="nav-item" href="contact.html" title="Contact">
-    <span class="ico">✉️</span>
-    <span class="label">Contact</span>
-  </a>
-</nav>
+      <a class="nav-item" href="index.html" title="About">
+        <i class="ico fa-solid fa-user"></i>
+        <span class="label">About</span>
+      </a>
+      <a class="nav-item" href="skills.html" title="Skills">
+        <i class="ico fa-solid fa-gear"></i>
+        <span class="label">Skills</span>
+      </a>
+      <a class="nav-item" href="portfolio.html" title="Portfolio">
+        <i class="ico fa-solid fa-briefcase"></i>
+        <span class="label">Portfolio</span>
+      </a>
+      <a class="nav-item active" href="certificates.html" title="Certificates">
+        <i class="ico fa-solid fa-graduation-cap"></i>
+        <span class="label">Certificates</span>
+      </a>
+      <a class="nav-item" href="contact.html" title="Contact">
+        <i class="ico fa-solid fa-envelope"></i>
+        <span class="label">Contact</span>
+      </a>
+    </nav>
 
     <div class="social" aria-label="Social links">
       <a class="nav-item" href="https://www.linkedin.com/in/babar-khan-853191163/" target="_blank" rel="noopener">
-        <span class="ico">🔗</span>
+        <i class="ico fa-brands fa-linkedin"></i>
         <span class="label">LinkedIn</span>
       </a>
       <a class="nav-item" href="https://github.com/babar-khuhro" target="_blank" rel="noopener">
-        <span class="ico">💻</span>
+        <i class="ico fa-brands fa-github"></i>
         <span class="label">GitHub</span>
       </a>
-      <a class="nav-item" href="https://www.youtube.com/channel/UC6mwRzIflG9i0BtTdz3B0Hw"  target="_blank" rel="noopener">
-        <span class="ico">▶️</span>
+      <a class="nav-item" href="https://www.youtube.com/channel/UC6mwRzIflG9i0BtTdz3B0Hw" target="_blank" rel="noopener">
+        <i class="ico fa-brands fa-youtube"></i>
         <span class="label">YouTube</span>
       </a>
     </div>
@@ -80,169 +76,146 @@
   <main class="page-content">
     <main class="certificates-page" role="main">
 
-<!-- Top: CV download button -->
-<div class="certificates-header">
-<a href="assets/certificates/BabarKhan_CV.pdf" class="cv-download-btn" download>Download CV</a>
-</div>
+      <!-- Top: CV download button -->
+      <div class="certificates-header">
+        <a href="assets/certificates/BabarKhan_CV.pdf" class="cv-download-btn" download>Download CV</a>
+      </div>
 
-<!-- Page heading -->
-<h1 class="certificates-title">Certificates</h1>
+      <h1 class="certificates-title">Certificates</h1>
 
-<!-- Certificates list -->
-<div class="certificates-list">
+      <div class="certificates-list">
+        <!-- Certificate Cards -->
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="assets/certificates/1.IBM-FullStackSoftwareDeveloper.PNG" alt="IBM Full-Stack Software Developer" loading="lazy">
+          </div>
+          <a href="https://coursera.org/verify/professional-cert/P6MEPZ9SN5UK" target="_blank" class="verify-link">Verify here →</a>
+        </div>
 
-<!-- Example certificate card -->
-<!-- 1 -->
-<div class="certificate-card">
-<div class="certificate-image">
-<img src="assets/certificates/1.IBM-FullStackSoftwareDeveloper.PNG" alt="IBM Full-Stack Software Developer" loading="lazy">
-</div>
-<a href="https://coursera.org/verify/professional-cert/P6MEPZ9SN5UK" target="_blank" class="verify-link">Verify here →</a>
-</div>
-<!-- 2 -->
-<!-- Duplicate cards -->
-<div class="certificate-card">
-<div class="certificate-image">
-<img src="assets/certificates/2.GoogleProjectManagement.PNG" alt="Meta Front-End Developer" loading="lazy">
-</div>
-<a href="https://coursera.org/verify/professional-cert/D89J4UR78LXN" target="_blank" class="verify-link">Verify here →</a>
-</div>
-<!-- 3 -->
-<div class="certificate-card">
-<div class="certificate-image">
-<img src="assets/certificates/3.GoogleCyberSecurity.PNG" alt="GoogleCyberSecurity" loading="lazy">
-</div>
-<a href="https://coursera.org/verify/professional-cert/Q57RPTNWZ5WQ" target="_blank" class="verify-link">Verify here →</a>
-</div>
-<!-- 4 -->
-<div class="certificate-card">
-<div class="certificate-image">
-<img src="assets/certificates/4.DeepLearning.PNG" alt="DeepLearning" loading="lazy">
-</div>
-<a href="https://coursera.org/verify/specialization/DEAADMEW7HJJ" target="_blank" class="verify-link">Verify here →</a>
-</div>
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="assets/certificates/2.GoogleProjectManagement.PNG" alt="Google Project Management" loading="lazy">
+          </div>
+          <a href="https://coursera.org/verify/professional-cert/D89J4UR78LXN" target="_blank" class="verify-link">Verify here →</a>
+        </div>
 
-<!-- 5 -->
-<div class="certificate-card">
-<div class="certificate-image">
-<img src="assets/certificates/5.MachineLearning.PNG" alt="MachineLearning" loading="lazy">
-</div>
-<a href="https://coursera.org/verify/specialization/EFU569G9UPWX" target="_blank" class="verify-link">Verify here →</a>
-</div>
-<!-- 6 -->
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="assets/certificates/3.GoogleCyberSecurity.PNG" alt="Google Cyber Security" loading="lazy">
+          </div>
+          <a href="https://coursera.org/verify/professional-cert/Q57RPTNWZ5WQ" target="_blank" class="verify-link">Verify here →</a>
+        </div>
 
-<div class="certificate-card">
-<div class="certificate-image">
-<img src="assets/certificates/6-IBM AI Engineering.PNG" alt="IBM AI Engineering" loading="lazy">
-</div>
-<a href="https://coursera.org/verify/professional-cert/2YY364QVZTQB" target="_blank" class="verify-link">Verify here →</a>
-</div>
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="assets/certificates/4.DeepLearning.PNG" alt="Deep Learning" loading="lazy">
+          </div>
+          <a href="https://coursera.org/verify/specialization/DEAADMEW7HJJ" target="_blank" class="verify-link">Verify here →</a>
+        </div>
 
-<!--7  -->
-<div class="certificate-card">
-<div class="certificate-image">
-<img src="assets/certificates/7-AI Product Management - Duke University.PNG" alt="AI Product Management - Duke University" loading="lazy">
-</div>
-<a href="https://coursera.org/verify/specialization/4QB34G4LFE5N" target="_blank" class="verify-link">Verify here →</a>
-</div>
-<!-- 8 -->
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="assets/certificates/5.MachineLearning.PNG" alt="Machine Learning" loading="lazy">
+          </div>
+          <a href="https://coursera.org/verify/specialization/EFU569G9UPWX" target="_blank" class="verify-link">Verify here →</a>
+        </div>
 
-<div class="certificate-card">
-<div class="certificate-image">
-<img src="assets/certificates/8.IBM Applied AI.PNG" alt="IBM Applied AI" loading="lazy">
-</div>
-<a href="https://coursera.org/verify/professional-cert/RRLUZBPQQ6AB" target="_blank" class="verify-link">Verify here →</a>
-</div>
-<!-- 9 -->
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="assets/certificates/6-IBM AI Engineering.PNG" alt="IBM AI Engineering" loading="lazy">
+          </div>
+          <a href="https://coursera.org/verify/professional-cert/2YY364QVZTQB" target="_blank" class="verify-link">Verify here →</a>
+        </div>
 
-<div class="certificate-card">
-<div class="certificate-image">
-<img src="assets/certificates/9.IBM Database Engineer.PNG" alt="IBM Database Engineer" loading="lazy">
-</div>
-<a href="https://coursera.org/verify/professional-cert/H225SMS7CPJV" target="_blank" class="verify-link">Verify here →</a>
-</div>
-<!-- 10 -->
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="assets/certificates/7-AI Product Management - Duke University.PNG" alt="AI Product Management - Duke University" loading="lazy">
+          </div>
+          <a href="https://coursera.org/verify/specialization/4QB34G4LFE5N" target="_blank" class="verify-link">Verify here →</a>
+        </div>
 
-<div class="certificate-card">
-<div class="certificate-image">
-<img src="assets/certificates/10.Google IT Support.PNG" alt="Google IT Support" loading="lazy">
-</div>
-<a href="https://coursera.org/verify/professional-cert/Z9N58JG9BHBP" target="_blank" class="verify-link">Verify here →</a>
-</div>
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="assets/certificates/8.IBM Applied AI.PNG" alt="IBM Applied AI" loading="lazy">
+          </div>
+          <a href="https://coursera.org/verify/professional-cert/RRLUZBPQQ6AB" target="_blank" class="verify-link">Verify here →</a>
+        </div>
 
-<!--11  -->
-<div class="certificate-card">
-<div class="certificate-image">
-<img src="assets/certificates/11.Meta Backend Developer.PNG" alt="Meta Backend Developer" loading="lazy">
-</div>
-<a href="https://coursera.org/verify/professional-cert/22JG8PJMA3CV" target="_blank" class="verify-link">Verify here →</a>
-</div>
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="assets/certificates/9.IBM Database Engineer.PNG" alt="IBM Database Engineer" loading="lazy">
+          </div>
+          <a href="https://coursera.org/verify/professional-cert/H225SMS7CPJV" target="_blank" class="verify-link">Verify here →</a>
+        </div>
 
-<!-- 12 -->
-<div class="certificate-card">
-<div class="certificate-image">
-<img src="assets/certificates/12.Meta Frontend Developer.PNG" alt="Meta Front-End Developer" loading="lazy">
-</div>
-<a href="https://coursera.org/verify/professional-cert/VBQY3AYLMMXS" target="_blank" class="verify-link">Verify here →</a>
-</div>
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="assets/certificates/10.Google IT Support.PNG" alt="Google IT Support" loading="lazy">
+          </div>
+          <a href="https://coursera.org/verify/professional-cert/Z9N58JG9BHBP" target="_blank" class="verify-link">Verify here →</a>
+        </div>
 
-<!-- 13 -->
-<div class="certificate-card">
-<div class="certificate-image">
-<img src="assets/certificates/13.IBM Devops And Software Engineering.PNG" alt="IBM Devops And Software Engineering" loading="lazy">
-</div>
-<a href="https://coursera.org/verify/professional-cert/NVELMW4TMNC4" target="_blank" class="verify-link">Verify here →</a>
-</div>
-<!-- 14 -->
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="assets/certificates/11.Meta Backend Developer.PNG" alt="Meta Backend Developer" loading="lazy">
+          </div>
+          <a href="https://coursera.org/verify/professional-cert/22JG8PJMA3CV" target="_blank" class="verify-link">Verify here →</a>
+        </div>
 
-<div class="certificate-card">
-<div class="certificate-image">
-<img src="assets/certificates/14.IBM Backend Development.PNG" alt="IBM Backend Development" loading="lazy">
-</div>
-<a href="https://coursera.org/verify/professional-cert/VPVL2ZLJR3XE" target="_blank" class="verify-link">Verify here →</a>
-</div>
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="assets/certificates/12.Meta Frontend Developer.PNG" alt="Meta Front-End Developer" loading="lazy">
+          </div>
+          <a href="https://coursera.org/verify/professional-cert/VBQY3AYLMMXS" target="_blank" class="verify-link">Verify here →</a>
+        </div>
 
-<!--15  -->
-<div class="certificate-card">
-<div class="certificate-image">
-<img src="assets/certificates/15.Meta React Native.PNG" alt="Meta React Native" loading="lazy">
-</div>
-<a href="https://coursera.org/verify/specialization/X4WN5R9YSXKU" target="_blank" class="verify-link">Verify here →</a>
-</div>
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="assets/certificates/13.IBM Devops And Software Engineering.PNG" alt="IBM Devops And Software Engineering" loading="lazy">
+          </div>
+          <a href="https://coursera.org/verify/professional-cert/NVELMW4TMNC4" target="_blank" class="verify-link">Verify here →</a>
+        </div>
 
-<!-- 16 -->
-<div class="certificate-card">
-<div class="certificate-image">
-<img src="assets/certificates/16.Django ForEverybody -Michigan University.PNG" alt="Django ForEverybody -Michigan University" loading="lazy">
-</div>
-<a href="https://coursera.org/verify/specialization/XZ8LT9ZPTUGV" target="_blank" class="verify-link">Verify here →</a>
-</div>
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="assets/certificates/14.IBM Backend Development.PNG" alt="IBM Backend Development" loading="lazy">
+          </div>
+          <a href="https://coursera.org/verify/professional-cert/VPVL2ZLJR3XE" target="_blank" class="verify-link">Verify here →</a>
+        </div>
 
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="assets/certificates/15.Meta React Native.PNG" alt="Meta React Native" loading="lazy">
+          </div>
+          <a href="https://coursera.org/verify/specialization/X4WN5R9YSXKU" target="_blank" class="verify-link">Verify here →</a>
+        </div>
 
-<!-- 17 -->
-<div class="certificate-card">
-<div class="certificate-image">
-<img src="assets/certificates/17.SEO Digiskills.PNG" alt="SEO Digiskills" loading="lazy">
-</div>
-<a href="https://digiskills.pk/verify" target="_blank" class="verify-link">Verify here →</a>
-</div>
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="assets/certificates/16.Django ForEverybody -Michigan University.PNG" alt="Django For Everybody - Michigan University" loading="lazy">
+          </div>
+          <a href="https://coursera.org/verify/specialization/XZ8LT9ZPTUGV" target="_blank" class="verify-link">Verify here →</a>
+        </div>
 
-<!-- 18 -->
-<div class="certificate-card">
-<div class="certificate-image">
-<img src="assets/certificates/18.Freelancing Digiskills.PNG" alt="Freelancing Digiskills" loading="lazy">
-</div>
-<a href="https://digiskills.pk/verify" target="_blank" class="verify-link">Verify here →</a>
-</div>
-</div>
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="assets/certificates/17.SEO Digiskills.PNG" alt="SEO Digiskills" loading="lazy">
+          </div>
+          <a href="https://digiskills.pk/verify" target="_blank" class="verify-link">Verify here →</a>
+        </div>
 
-</main>
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="assets/certificates/18.Freelancing Digiskills.PNG" alt="Freelancing Digiskills" loading="lazy">
+          </div>
+          <a href="https://digiskills.pk/verify" target="_blank" class="verify-link">Verify here →</a>
+        </div>
+      </div>
+
+    </main>
   </main>
 
-  <!-- Global scripts (preloader logic etc.) -->
   <script src="assets/js/preloader.js"></script>
-  <!-- <script src="assets/js/script.js"></script> -->
-  <!-- Page-specific scripts (supports array or single string) -->
-    <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/navigation.js"></script>
 </body>
 </html>

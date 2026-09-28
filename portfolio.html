@@ -2,23 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio | Babar Khan</title>
 
   <!-- Global styles -->
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- Component styles (kept separate for clarity) -->
+  <!-- Component styles -->
   <link rel="stylesheet" href="assets/css/preloader.css">
   <link rel="stylesheet" href="assets/css/sidebar.css">
 
-  <!-- Page-specific extra head (e.g. external libs) -->
-  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <!-- Page-specific styles -->
-      <link rel="stylesheet" href="assets/css/portfolio.css">
-  </head>
+  <link rel="stylesheet" href="assets/css/portfolio.css">
+</head>
 <body>
 
-  <!-- Preloader (inline) -->
+  <!-- Preloader -->
   <div class="preloader" aria-hidden="false">
     <div class="inner">
       <img src="assets/images/Babarkhan.jpg" alt="Logo" class="logo" />
@@ -27,50 +29,44 @@
     </div>
   </div>
 
-  <!-- Sidebar (inline) -->
+  <!-- Sidebar -->
   <aside class="sidebar" aria-label="Sidebar">
     <img src="assets/images/Babarkhan.jpg" alt="Logo" class="logo" />
 
     <nav class="nav" aria-label="Main navigation">
-  <a class="nav-item" href="index.html" title="About">
-  <span class="ico">👤</span>
-    <span class="label">About</span>
-    </a>
-
-  
-  <a class="nav-item" href="skills.html" title="Skills">
-    <span class="ico">⚙️</span>
-    <span class="label">Skills</span>
-  </a>
-
-  <a class="nav-item" href="portfolio.html" title="Portfolio">
-    <span class="ico">📂</span>
-    <span class="label">Portfolio</span>
-  </a>
-
-  <!-- New Certificates link -->
-  <a class="nav-item" href="certificates.html" title="Certificates">
-    <span class="ico">🎓</span>
-    <span class="label">Certificates</span>
-  </a>
-
-  <a class="nav-item" href="contact.html" title="Contact">
-    <span class="ico">✉️</span>
-    <span class="label">Contact</span>
-  </a>
-</nav>
+      <a class="nav-item" href="index.html" title="About">
+        <i class="ico fa-solid fa-user"></i>
+        <span class="label">About</span>
+      </a>
+      <a class="nav-item" href="skills.html" title="Skills">
+        <i class="ico fa-solid fa-gear"></i>
+        <span class="label">Skills</span>
+      </a>
+      <a class="nav-item active" href="portfolio.html" title="Portfolio">
+        <i class="ico fa-solid fa-briefcase"></i>
+        <span class="label">Portfolio</span>
+      </a>
+      <a class="nav-item" href="certificates.html" title="Certificates">
+        <i class="ico fa-solid fa-graduation-cap"></i>
+        <span class="label">Certificates</span>
+      </a>
+      <a class="nav-item" href="contact.html" title="Contact">
+        <i class="ico fa-solid fa-envelope"></i>
+        <span class="label">Contact</span>
+      </a>
+    </nav>
 
     <div class="social" aria-label="Social links">
       <a class="nav-item" href="https://www.linkedin.com/in/babar-khan-853191163/" target="_blank" rel="noopener">
-        <span class="ico">🔗</span>
+        <i class="ico fa-brands fa-linkedin"></i>
         <span class="label">LinkedIn</span>
       </a>
       <a class="nav-item" href="https://github.com/babar-khuhro" target="_blank" rel="noopener">
-        <span class="ico">💻</span>
+        <i class="ico fa-brands fa-github"></i>
         <span class="label">GitHub</span>
       </a>
-      <a class="nav-item" href="https://www.youtube.com/channel/UC6mwRzIflG9i0BtTdz3B0Hw"  target="_blank" rel="noopener">
-        <span class="ico">▶️</span>
+      <a class="nav-item" href="https://www.youtube.com/channel/UC6mwRzIflG9i0BtTdz3B0Hw" target="_blank" rel="noopener">
+        <i class="ico fa-brands fa-youtube"></i>
         <span class="label">YouTube</span>
       </a>
     </div>
@@ -79,233 +75,128 @@
   <!-- Main Page Content -->
   <main class="page-content">
     <main class="content" role="main">
-  <div class="portfolio-page">
-    <div class="portfolio-intro">
-      <p>
-        The projects showcased here represent a selection of my work across
-        full-stack development, mobile applications, databases, and cloud-based
-        technologies. I have worked on additional projects through various
-        platforms and development environments, and this portfolio will be
-        expanded and updated with more of my work in the future.
-      </p>
-    </div>
-    <div class="projects-grid" aria-live="polite">
+      <div class="portfolio-page">
+        <div class="portfolio-intro">
+          <p>
+            The projects showcased here represent a selection of my work across
+            full-stack development, mobile applications, databases, and cloud-based
+            technologies. I have worked on additional projects through various
+            platforms and development environments, and this portfolio will be
+            expanded and updated with more of my work in the future.
+          </p>
+        </div>
+        <div class="projects-grid" aria-live="polite">
 
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-thumb">
+              <img src="assets/images/SilsilaSaifia.PNG" alt="Project 1 Thumbnail">
+            </div>
+            <div class="project-body">
+              <div class="project-type">Mobile Application (React Native / Expo)</div>
+              <h3 class="project-name">
+                <a href="#">سلسلہ عالیہ سیفیہ کے خلفاء – Record Management & Search Engine</a>
+              </h3>
+              <p class="project-desc">
+                A high-performance offline Android application built to store, filter, and instantly retrieve over <strong>48,801 historical certification records</strong> across 16 detailed fields, including names, genealogical details, location data, and lineage parameters (کیفیتِ خلافت). Engineered with <strong>SQLite</strong> for instant indexing and optimized for seamless Urdu localization.
+              </p>
+            </div>
+          </div>
 
-<!-- Project  1 start -->
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-thumb">
+              <img src="assets/images/Little_Lemon_Reservation_image.png" alt="Little Lemon Reservation App">
+            </div>
+            <div class="project-body">
+              <div class="project-type">Web Application (React)</div>
+              <h3 class="project-name">
+                <a href="https://github.com/BABAR-KHUHRO/Little-Lemon" target="_blank" rel="noopener">Little Lemon – Restaurant Reservation App</a>
+              </h3>
+              <p class="project-desc">
+                A responsive React-based restaurant web application developed as the capstone project for Meta's Front-End Developer Professional Certificate. Demonstrates component-based development, responsive UI, table booking, form validation, API integration, testing, and accessibility.
+              </p>
+            </div>
+          </div>
 
-    <div class="project-card">
-  <div class="project-thumb">
-    <img src="assets/images/SilsilaSaifia.PNG" alt="Project 1 Thumbnail">
-  </div>
-  <div class="project-body">
-  <div class="project-type">Mobile Application (React Native / Expo)</div>
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-thumb">
+              <img src="assets/images/Car_Dealership_Reviews.png" alt="Car Dealership Reviews Project">
+            </div>
+            <div class="project-body">
+              <span class="project-type">Full-Stack Web Application (Django / IBM Cloud)</span>
+              <h3 class="project-name">
+                <a href="https://github.com/BABAR-KHUHRO/agfzb-CloudAppDevelopment_Capstone" target="_blank" rel="noopener">
+                  Car Dealership Reviews – Cloud Review Portal
+                </a>
+              </h3>
+              <p class="project-desc">
+                A full-stack car dealership review portal developed as the capstone project for the IBM Full Stack Software Developer Professional Certificate. Built with Django and IBM Cloud services, providing state-based filtering, user authentication, and review submissions.
+              </p>
+            </div>
+          </div>
 
-  <h3 class="project-name">
-      <a href="#">سلسلہ عالیہ سیفیہ کے خلفاء – Record Management & Search Engine</a>  </h3>
+          <!-- Project 4 -->
+          <div class="project-card">
+            <div class="project-thumb">
+              <img src="assets/images/Restful_Microservices.png" alt="IBM DevOps Capstone Project">
+            </div>
+            <div class="project-body">
+              <span class="project-type">DevOps / Cloud-Native Application</span>
+              <h3 class="project-name">
+                <a href="https://github.com/BABAR-KHUHRO/devops-capstone-project" target="_blank" rel="noopener">
+                  RESTful Microservice – DevOps Capstone Project
+                </a>
+              </h3>
+              <p class="project-desc">
+                A cloud-native RESTful microservice developed for the IBM DevOps and Software Engineering Professional Certificate. Built with Flask and PostgreSQL, utilizing TDD, CI/CD pipelines, containerization, Kubernetes, OpenShift, and Tekton.
+              </p>
+            </div>
+          </div>
 
-  <p class="project-desc">
-      A high-performance offline Android application built to store, filter, and instantly retrieve over <strong>48,801 historical certification records</strong> across 16 detailed fields, including names, genealogical details, location data, and lineage parameters (کیفیتِ خلافت). Engineered with <strong>SQLite</strong> for instant indexing and optimized for seamless Urdu localization, the app was deployed in two distinct release builds: a <strong>Full Edition</strong> featuring embedded high-resolution archive document scans, and a ultra-compressed <strong>Lite Edition</strong> bundled with a companion reference PDF for fast distribution via low-bandwidth channels.
-  </p>
+          <!-- Project 5 -->
+          <div class="project-card">
+            <div class="project-thumb">
+              <img src="assets/images/Little_Lemon_Food_Ordering_app.PNG" alt="Meta React Native Capstone Project">
+            </div>
+            <div class="project-body">
+              <span class="project-type">Mobile Application (React Native / Expo)</span>
+              <h3 class="project-name">
+                <a href="https://github.com/BABAR-KHUHRO/C_ReactApp" target="_blank" rel="noopener">
+                  Little Lemon – React Native Food Ordering App
+                </a>
+              </h3>
+              <p class="project-desc">
+                A cross-platform mobile application developed as the capstone project for the Meta React Native Specialization. Built with React Native, demonstrating responsive UI design, onboarding, local storage persistence, and dynamic food menu filtering.
+              </p>
+            </div>
+          </div>
 
+          <!-- Project 6 -->
+          <div class="project-card">
+            <div class="project-thumb">
+              <img src="assets/images/Little_Lemon_Database.PNG" alt="Meta Database Engineer Capstone Project">
+            </div>
+            <div class="project-body">
+              <span class="project-type">Database Engineering / MySQL</span>
+              <h3 class="project-name">
+                <a href="https://github.com/BABAR-KHUHRO/DataProject/tree/main/Database%20Engineer%20Capstone" target="_blank" rel="noopener">
+                  Little Lemon – Database Engineering Capstone
+                </a>
+              </h3>
+              <p class="project-desc">
+                A database engineering project developed for the Meta Database Engineer Professional Certificate. Includes full database modeling, sales reporting, stored procedures, Tableau analytics, and a Python client interface.
+              </p>
+            </div>
+          </div>
 
-</div>
-
-</div>
-
-<!-- Project End  -->
-
-<!-- Project  2 start -->
-<div class="project-card">
-  <div class="project-thumb">
-    <img src="assets/images/Little_Lemon_Reservation_image.png" alt="Project 1 Thumbnail">
-  </div>
-  <div class="project-body">
-    <div class="project-type">Web Application (React)</div>
-    <h3 class="project-name"><a href="https://github.com/BABAR-KHUHRO/Little-Lemon" target="_blank">Little Lemon – Restaurant Reservation App</a></h3>
-     <!--Description  -->
-<p class="project-desc">
-     A responsive React-based restaurant web application developed as the capstone project for Meta's Front-End Developer Professional Certificate. The project demonstrates component-based development, responsive UI, table booking, form validation, API integration, testing, accessibility, and UX-focused development.
-    </p>
-     <!--  -->
-  </div>
-</div>
-<!-- Project End  -->
-
-<!-- Project 3 start -->
-<div class="project-card">
-
-  <div class="project-thumb">
-    <img src="assets/images/Car_Dealership_Reviews.png" alt="Car Dealership Reviews Project">
-  </div>
-
-  <div class="project-body">
-
-
-<span class="project-type">
-  Full-Stack Web Application (Django / IBM Cloud)
-</span>
-
-<h3 class="project-name">
-  <a href="https://github.com/BABAR-KHUHRO/agfzb-CloudAppDevelopment_Capstone"
-     target="_blank"
-     rel="noopener">
-    Car Dealership Reviews – Cloud Review Portal
-  </a>
-</h3>
-
-<p class="project-desc">
-  A full-stack car dealership review portal developed as the capstone project
-  for the IBM Full Stack Software Developer Professional Certificate. Built
-  with Django and IBM Cloud services, the application provides dealership
-  browsing, state-based filtering, user authentication, dealership reviews,
-  and review submission. The project also integrates cloud functions,
-  Django models and proxy services, dynamic templates, CI/CD workflows,
-  and containerization for cloud deployment.
-</p>
-
-  </div>
-
-</div>
-
-<!-- Project End  -->
-
-<!-- Project 4 start -->
-<div class="project-card">
-
-  <div class="project-thumb">
-    <img src="assets/images/Restful_Microservices.png"
-         alt="IBM DevOps and Software Engineering Capstone Project">
-  </div>
-
-  <div class="project-body">
-
-<span class="project-type">
-  DevOps / Cloud-Native Application
-</span>
-
-<h3 class="project-name">
-  <a href="https://github.com/BABAR-KHUHRO/devops-capstone-project"
-     target="_blank"
-     rel="noopener">
-    RESTful Microservice – DevOps Capstone Project
-  </a>
-</h3>
-
-<p class="project-desc">
-  A cloud-native RESTful microservice developed as the capstone project
-  for the IBM DevOps and Software Engineering Professional Certificate.
-  Built with Flask and PostgreSQL, the project applies Test-Driven
-  Development, REST API development, automated testing, CI/CD,
-  containerization, Kubernetes, OpenShift, and Tekton for automated
-  cloud deployment.
-</p>
-
-  </div>
-
-</div>
-
-<!-- Project End  -->
-
-
-<!-- Project 5 start -->
-
-<div class="project-card">
-
-  <div class="project-thumb">
-    <img src="assets/images/Little_Lemon_Food_Ordering_app.PNG"
-         alt="Meta React Native Capstone Project">
-  </div>
-
-  <div class="project-body">
-
-
-<span class="project-type">
-  Mobile Application (React Native / Expo)
-</span>
-
-<h3 class="project-name">
-  <a href="https://github.com/BABAR-KHUHRO/C_ReactApp"
-     target="_blank"
-     rel="noopener">
-    Little Lemon – React Native Food Ordering App
-  </a>
-</h3>
-
-<p class="project-desc">
-  A cross-platform mobile application developed as the capstone project
-  for the Meta React Native Specialization. Built with React Native,
-  the application demonstrates responsive UI design, user onboarding,
-  navigation, profile management, remote data access, data persistence,
-  and food menu filtering. The project applies reusable React components,
-  Git/GitHub version control, and mobile UX/UI principles.
-</p>
-
-
-  </div>
-
-</div>
-
-<!-- Project End  -->
-
-
-<!-- Project 6 start -->
-<div class="project-card">
-
-  <div class="project-thumb">
-    <img src="assets/images/Little_Lemon_Database.PNG"
-         alt="Meta Database Engineer Capstone Project">
-  </div>
-
-  <div class="project-body">
-
-
-<span class="project-type">
-  Database Engineering / MySQL
-</span>
-
-<h3 class="project-name">
-  <a href="https://github.com/BABAR-KHUHRO/DataProject/tree/main/Database%20Engineer%20Capstone"
-     target="_blank"
-     rel="noopener">
-    Little Lemon – Database Engineering Capstone
-  </a>
-</h3>
-
-<p class="project-desc">
-  A database engineering project developed as the capstone for the Meta
-  Database Engineer Professional Certificate. The project builds a MySQL
-  database solution for Little Lemon, including database design and
-  modeling, sales reporting, a table-booking system, optimized SQL
-  queries and stored procedures, data analytics and visualization,
-  and a Python database client. The project also applies Git,
-  MySQL Workbench, Tableau, and database development practices.
-</p>
-
-  </div>
-
-</div>
-
-<!-- Project End  -->
-<!-- Project  start -->
-<!-- Project End  -->
-<!-- Project  start -->
-<!-- Project End  -->
-<!-- Project  start -->
-<!-- Project End  -->
-<!-- Project  start -->
-<!-- Project End  -->
-<!-- Project  start -->
-<!-- Project End  -->
-    </div>
-  </div>
-</main>
+        </div>
+      </div>
+    </main>
   </main>
 
-  <!-- Global scripts (preloader logic etc.) -->
   <script src="assets/js/preloader.js"></script>
-  <!-- <script src="assets/js/script.js"></script> -->
-  <!-- Page-specific scripts (supports array or single string) -->
-    <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/navigation.js"></script>
 </body>
 </html>

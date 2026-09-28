@@ -10,11 +10,12 @@
 
 /* right column fixed width */
 .content .skills-page .skills-galaxy { flex:0 0 520px; max-width:520px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; box-sizing:border-box; }
+.content .skills-page .skills-galaxy h3 { color: #f0db4f; margin-bottom: 10px; font-size: 1.3rem; }
 .content .skills-page .galaxy-stage { position:relative; width:500px; height:500px; margin:0 auto; }
 .content .skills-page #skillsCanvas { width:500px !important; height:500px !important; display:block; margin:0 auto; background:transparent; cursor:grab; -webkit-user-select:none; user-select:none; }
 
 .content .skills-page .hidden-tags { display:none; }
-.content .skills-page .skills-note { color: rgba(255,255,255,0.9); margin-top:10px; }
+.content .skills-page .skills-note { color: rgba(255,255,255,0.9); margin-top:20px; line-height: 1.6; }
 
 /* responsive */
 @media (max-width:1024px) {
@@ -22,6 +23,7 @@
   .content .skills-page .skills-galaxy, .content .skills-page .galaxy-stage, .content .skills-page #skillsCanvas { width:420px !important; height:420px !important; max-width:100%; }
   .content .skills-page .skills-text { max-width:100%; }
 }
+
 @media (max-width:640px) {
-  .content .skills-page .skills-galaxy, .content .skills-page .galaxy-stage, .content .skills-page #skillsCanvas { width:320px !important; height:320px !important; }
+  .content .skills-page .skills-galaxy, .content .skills-page .galaxy-stage, .content .skills-page #skillsCanvas { width:300px !important; height:300px !important; }
 }
