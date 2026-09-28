@@ -103,6 +103,8 @@
 }
 
 /* --- Mobile Dual-Bar Layout --- */
+/* Add/Replace the mobile media query section in assets/css/sidebar.css */
+
 @media screen and (max-width: 768px) {
   
   /* Top Bar */
@@ -121,6 +123,7 @@
     align-items: center;
     padding: 0 8px;
     border-bottom: 1px solid #2a2a2a;
+    z-index: 1000;
   }
 
   .sidebar .logo {
@@ -159,7 +162,7 @@
 
   .sidebar .nav .nav-item.active .label,
   .sidebar .nav .nav-item:hover .label {
-    color: var(--accent);
+    color: var(--accent, #f0db4f);
   }
 
   /* Bottom Social Bar */
@@ -179,6 +182,7 @@
     margin: 0;
     padding: 0 8px;
     border-top: 1px solid #2a2a2a;
+    z-index: 1000;
   }
 
   .sidebar .social .nav-item {
@@ -207,8 +211,13 @@
     color: #ffffff;
   }
 
+  /* Key Fix: Ensures body and page content have generous spacing above the bottom bar */
   body {
     padding-top: 55px !important;
-    padding-bottom: 50px !important;
+    padding-bottom: 70px !important;
+  }
+
+  .page-content, main.content {
+    padding-bottom: 40px !important;
   }
 }

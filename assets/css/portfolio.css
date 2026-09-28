@@ -137,17 +137,20 @@ main.content {
 @media (max-width: 768px) {
   main.content {
     margin-left: 0;
-    padding: 16px;
+    padding: 16px 16px 60px 16px; /* Extra bottom padding */
+  }
+  .content .portfolio-page {
+    padding-bottom: 40px;
   }
   .content .portfolio-page .projects-grid {
     grid-template-columns: 1fr;
+    margin-bottom: 20px;
   }
   .content .portfolio-page .project-card {
     height: auto;
     min-height: 340px;
   }
 }
-
 @media (min-width: 769px) and (max-width: 1100px) {
   .content .portfolio-page .projects-grid {
     grid-template-columns: repeat(2, 1fr);
